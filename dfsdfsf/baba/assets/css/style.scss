@@ -1,0 +1,442 @@
+$bg_color: #FBF6F6;
+$font_color: #504949;
+
+@font-face {
+    font-family:cormorant;
+    src: url('../fonts/Cormorant-Bold.ttf');
+    font-weight: 700px;
+}
+
+@font-face {
+    font-family:cormorant;
+    src: url('../fonts/Cormorant-Medium.ttf');
+    font-weight: 500px;
+}
+
+@font-face {
+    font-family:cormorant;
+    src: url('../fonts/Cormorant-Regular.ttf');
+    font-weight: 400px;
+}
+
+@font-face {
+    font-family:cormorant;
+    src: url('../fonts/Cormorant-SemiBold.ttf');
+    font-weight: 600px;
+}
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    font-family: cormorant;
+    color: $font_color;
+    font-size: 18px;
+    font-weight: 400px;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0px auto;
+    @media (max-width: 376px) {
+        max-width: unset;
+        padding: 0 37px;
+    }
+}
+
+.header{
+    padding: 20px 0px;
+    &__burger{
+        display: none;
+        @media (max-width:376) {
+            display: block;
+        }
+    }
+    
+    &__menu{
+        display: flex;
+        gap: 40px;
+        @media (max-width:376) {
+            display: none;
+        }
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__link{
+        font-weight: 400px;
+        &:hover{
+            font-weight: 700px;
+        }
+    }
+}
+
+.main{
+
+    background-color: $bg_color;
+    padding: 77px 0 122px 0;
+    &__text{
+        &_bold{
+            font-weight: 700px;
+            margin-left: 107px;
+            margin-bottom: 0px;
+            
+        }
+    }
+
+    &__title{
+        font-weight: 600px;
+        font-size: 80px;
+    }
+
+    &__box{
+        display: flex;
+        gap: 79px;
+    }
+
+    
+    &__info{
+        display: flex;
+        gap: 40px;
+        margin-bottom: 38px;
+    }
+
+    &__dig{
+        font-size: 50px;
+    }
+
+    &__subtitle{
+        font-size: 40px;
+        font-weight: 700px;
+        max-width: 517px;
+        margin-bottom: 17px;
+    }
+
+    &__item{
+        max-width: 419px;
+        margin-bottom: 10px;
+        &_first{
+            display: flex;
+            gap: 23px;
+            &::before{
+                content: 1;
+                font-size: 50px;
+                line-height: 0.8px;
+            }
+        }
+
+
+
+        &_second{
+            display: flex;
+            gap: 23px;
+            &::before{
+                content: 2;
+                font-size: 50px;
+                line-height: 0.8px;
+            }
+        }
+
+        &_third{
+            display: flex;
+            gap: 23px;
+            &::before{
+                content: 3;
+                font-size: 50px;
+                line-height: 0.8px;
+            }
+        }
+
+        &_fourth{
+            display: flex;
+            gap: 23px;
+            &::before{
+                content: 4;
+                font-size: 50px;
+                line-height: 0.8px;
+            }
+        }
+    }
+}
+
+.main2{
+    &__bg{
+        background-color: #B59797;
+        height: 2361px;
+    }
+    &__sz{
+        font-size: 80px;
+    }
+    &__block{
+      margin-left: 333px;
+      color: #fff;
+    }
+    &__txt{
+        font-size: 18px;
+        position: relative;
+        top: 15px;
+    }
+    &__plus{
+        position: relative;
+        left: 1150px;
+        bottom: 10px;
+    }
+    &__txt2{
+        position: relative;
+        top: 15px;
+    }
+    &__plus2{
+        color: #fff;
+        position: relative;
+        left: 1485px;
+        bottom: 10px;
+    }
+    &__poloska3{
+        margin-left: 332px;
+    }
+    &__bg_div{
+        background-color: #FBF6F6;
+        margin-left: 63px;
+        height: 1281px;
+    }
+    &__rate{
+        font-size: 80px;
+        font-weight: 700;
+        padding-top: 120px;
+        padding-left: 70px;
+        margin-top: 157px;
+    }
+    &__standart{        
+        background-color: #B59797;
+        height: 400px;
+        width: 664px;
+        margin-top: 27px;
+        margin-left: 77px;
+        color: #fff;
+    }
+    &__std{
+        padding-top: 39px;
+        margin-left: 32px;
+    }
+    &__tx{
+        position: relative;
+        left: 70px;
+        top: 20px;
+    }
+    &__tir{
+        position: relative;
+        bottom: 5px;
+        left: 40px;       
+    }
+    &__tir2{
+        position: relative;
+        left: 40px;
+    }
+    &__tx2{
+        position: relative;
+        left: 70px;
+        bottom: 20px;
+    }
+    &__tx3{
+        position: relative;
+        left: 70px;
+        bottom: 37px;
+    }
+    &__tir3{
+        position: relative;
+        left: 40px;
+        bottom: 17px;
+    }
+    &__tx4{
+        position: relative;
+        left: 70px;
+        bottom: 51px;
+        text-decoration: line-through;
+    }
+    &__tir4{
+        position: relative;
+        left: 40px;
+        bottom: 33px;
+    }
+    &__tx5{
+        position: relative;
+        left: 70px;
+        bottom: 65px;
+        text-decoration: line-through;
+    }
+    &__tir5{
+        position: relative;
+        left: 40px;
+        bottom: 47px;
+    }
+    &__tx6{
+        position: relative;
+        left: 70px;
+        bottom: 78px;
+        text-decoration: line-through;
+    }
+    &__tir6{
+        position: relative;
+        left: 40px;
+        bottom: 60px;
+    }
+    &__tx7{
+        position: relative;
+        left: 70px;
+        bottom: 91px;
+        text-decoration: line-through;
+    }
+    &__tir7{
+        position: relative;
+        left: 40px;
+        bottom: 73px;
+    }
+    &__price{
+        position: relative;
+        bottom: 70px;
+        left: 40px;
+    }
+    &__btn1{
+        background-color: #FBF5F5;
+        height: 55px;
+        width: 200px;
+        position: relative;
+        left: 450px;
+        bottom: 25px;
+        text-align: center;
+        border: 2px solid #8D6B5D;
+        font-size: 18px;
+        color: #504949;
+        padding: 12px;
+    }
+    &__max{        
+        background-color: #B59797;
+        height: 400px;
+        width: 664px;
+        margin-top: 27px;
+        margin-left: 40px;
+        color: #fff;
+        position: relative;
+        left: 750px;
+        bottom: 483px;
+    }
+    &__mx{
+        font-size: 20px;
+        padding-top: 40px;
+        margin-left: 32px;
+    }
+    &__tx1{
+        position: relative;
+        left: 70px;
+        top: 20px;
+    }
+    &__tir1{
+        position: relative;
+        bottom: 5px;
+        left: 40px;
+        color:brown;        
+    }
+    &__tir20{
+        position: relative;
+        left: 40px;
+    }
+    &__tx20{
+        position: relative;
+        left: 70px;
+        bottom: 20px;
+    }
+    &__tx30{
+        position: relative;
+        left: 70px;
+        bottom: 37px;
+    }
+    &__tir30{
+        position: relative;
+        left: 40px;
+        bottom: 17px;
+    }
+    &__tx40{
+        position: relative;
+        left: 70px;
+        bottom: 51px;        
+    }
+    &__tir40{
+        position: relative;
+        left: 40px;
+        bottom: 33px;
+    }
+    &__tx50{
+        position: relative;
+        left: 70px;
+        bottom: 65px;        
+    }
+    &__tir50{
+        position: relative;
+        left: 40px;
+        bottom: 47px;
+    }
+    &__tx60{
+        position: relative;
+        left: 70px;
+        bottom: 78px;     
+    }
+    &__tir60{
+        position: relative;
+        left: 40px;
+        bottom: 60px;
+    }
+    &__tx70{
+        position: relative;
+        left: 70px;
+        bottom: 91px;
+    }
+    &__tir70{
+        position: relative;
+        left: 40px;
+        bottom: 73px;
+    }
+    &__btn2{
+        background-color: #FBF5F5;
+        height: 55px;
+        width: 200px;
+        position: relative;
+        left: 370px;
+        bottom: 25px;
+        text-align: center;
+        border: 2px solid #8D6B5D;
+        font-size: 18px;
+        color: #504949;
+        padding: 12px;
+    }
+    &__rassrochka{
+        font-size: 20px;
+        margin-left: 77px;
+        position: relative;
+        bottom: 400px;
+    }
+    &__woomen{
+        position: relative;
+        bottom: 304px;
+        right: 77px;
+    }
+    &__z{
+        font-size: 40px;
+        font-weight: 600;
+    }
+}
